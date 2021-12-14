@@ -5,3 +5,4 @@ This is my personal page with a short description of me
 - My basic information (age, name, country)
 - My skills
 - My experiences with web development
+- Links to my social media accounts (GitHub)
