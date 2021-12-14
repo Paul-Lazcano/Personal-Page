@@ -1,0 +1,25 @@
+{
+  "name": "personal-page",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Lazcano/Personal-Page.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "javascript"
+  ],
+  "author": "Paul Lazcano <alwaysbetterpaul@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul-Lazcano/Personal-Page/issues"
+  },
+  "homepage": "https://github.com/Paul-Lazcano/Personal-Page#readme"
+}
