@@ -1,0 +1,66 @@
+@import _variables
+@import _mediaQueries
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+html
+    scroll-behavior: smooth
+    font-size: 62.5%
+    @include media-up(lg)
+        $biggest-font-size   : 6.4rem
+        $h1-font-size        : 3.6rem
+        $h2-font-size        : 2.4rem
+        $h3-font-size        : 1.6rem
+        $normal-font-size    : 1.5rem
+        $small-font-size     : 1.3rem
+        $smaller-font-size   : 1.2rem
+        h1
+            font-size: $h1-font-size
+        h2
+            font-size: $h2-font-size
+        h3
+            font-size: $h3-font-size
+    
+
+body
+    font-family: $body-font
+    font-size: $normal-font-size
+    background-color: $body-color
+    color: $text-color
+    
+
+h1, h2, h3, h4
+    color: $title-color
+    font-weight: $font-semi-bold
+    
+
+h1
+    font-size: $h1-font-size
+h2
+    font-size: $h2-font-size
+h3
+    font-size: $h3-font-size
+
+    
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+img 
+    width: 100%
+    outline: none
+
+button,
+input
+    border: none
+    outline: none
+
+button
+    cursor: pointer
+    font-family: $body-font
+    font-size: $normal-font-size
