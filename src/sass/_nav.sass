@@ -1,0 +1,54 @@
+@import _variables
+@import _mediaQueries
+
+.nav
+    display: grid
+    grid-column: 1 / 5
+    grid-row: 1 / 2
+    height: 5rem
+    justify-items: end
+    align-items: center
+    transition: .4s
+    .nav__menu
+        border-radius: 0 0 1.5rem 1.5rem
+        .nav__item
+            margin: $mb-1
+            padding-block-end: $mb-0-5
+            border-block-end: 1px solid $text-color
+            .nav__link
+                font-size: $h3-font-size
+    .hide-menu
+        display: none
+    .show-menu
+        width: 100%
+        height: 100%
+        grid-column: 1 / 5
+        grid-row: 1 / 4
+        text-align: center
+        background-color: $container-color
+        padding: $mb-1-5
+        z-index: $z-fixed
+    #open-menu
+        grid-column: 4 / 5
+        grid-row: 1 / 2
+        display: inline-block
+        padding: .5rem
+        border-radius: 50%
+        background-color: $container-color 
+        font-size: $biggest-font-size
+        margin-inline-end: $mb-1-5
+        margin-block-start: $mb-1-5
+        &:hover
+            color: $text-color-light
+
+    @include media-up($breakpoint: md)
+        #open-menu
+            display: none
+        .hide-menu
+            display: grid
+            #close-menu
+                display: none
+            
+
+
+        

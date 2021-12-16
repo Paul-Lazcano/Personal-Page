@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- =================== FAVICON =================== -->
     <link rel="shortcut icon" href="./design/favicon.ico" type="image/x-icon">
+    <!-- =================== BOXICONS =================== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- =================== CSS =================== -->    
     <link rel="stylesheet" href="./src/css/main.css">
 
@@ -18,13 +20,36 @@
 <body>
     
     <!-- =================== HEADER =================== -->
-    <header class="header" id="header">
-        <div class="text-container">
-            <h1 class="header__title">Hi, im Paul</h1>
+    <header class="header container" id="header">
+
+        <nav class="nav">
+            <i class='bx bx-menu' id="open-menu" onclick="openMenu()"></i>
+            <ul class="nav__menu hide-menu" id="menu">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">My Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">My Story</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Social Media</a>
+                </li>
+                <i class='bx bx-x' id="close-menu" onclick="hideMenu()"></i>
+            </ul>
+        </nav>
+
+        <div class="header__text-container">
+            <h1 class="header__title">Hi, i'm Paul</h1>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main container">
         <!-- =================== HOME =================== -->
         <section class="home container" id="home">
             <!-- #1 About me -->
@@ -40,7 +65,7 @@
     </main>
 
     <!-- =================== FOOTER =================== -->
-    <footer class="footer" id="footer"></footer>
+    <footer class="footer container" id="footer"></footer>
     
     <!-- =================== MAIN JS =================== -->
     <script src="./src/js/main.js"></script>
