@@ -26,10 +26,10 @@
             <i class='bx bx-menu' id="open-menu" onclick="openMenu()"></i>
             <ul class="nav__menu hide-menu" id="menu">
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Home</a>
+                    <a href="#header" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">About</a>
+                    <a href="#about" class="nav__link">About</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__link">My Skills</a>
@@ -51,15 +51,23 @@
 
     <main class="main container">
         <!-- =================== HOME =================== -->
-        <section class="home container" id="home">
+        <section class="home" id="home">
             <!-- #1 About me -->
-            <section class="home__content grid"></section>
+            <section class="home__content" id="about">
+                <figure class="img-container">
+                    <img src="./design/img/me.jpg" alt="A photo of Paul, the creator of this website" class="img">
+                </figure>
+                <article class="home__text-container">
+                    <h1 class="home__title">Who am i?</h1>
+                    <p class="home__text">I'm Paul, a young man learning web development. I'm 19 yo and i'm from Mexico. I have 1 year learning web development in a online plataform named Platzi.</p>
+                </article>
+            </section>
             
             <!-- #2 My skills -->
-            <section class="home__content grid"></section>
+            <section class="home__content"></section>
             
             <!-- #3 My story -->
-            <section class="home__content grid"></section>
+            <section class="home__content"></section>
         </section>
 
     </main>
