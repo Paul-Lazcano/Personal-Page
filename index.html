@@ -32,7 +32,7 @@
                     <a href="#about" class="nav__link">About</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">My Skills</a>
+                    <a href="#my-skills" class="nav__link">My Skills</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="nav__link">My Story</a>
@@ -58,13 +58,87 @@
                     <img src="./design/img/me.jpg" alt="A photo of Paul, the creator of this website" class="img">
                 </figure>
                 <article class="home__text-container">
-                    <h1 class="home__title">Who am i?</h1>
-                    <p class="home__text">I'm Paul, a young man learning web development. I'm 19 yo and i'm from Mexico. I have 1 year learning web development in a online plataform named Platzi.</p>
+                    <h1 class="home__title">Who am I?</h1>
+                    <p class="home__text">I'm Paul, a young man learning web development. I'm 19 yo and I'm from Mexico. I have 1 year learning web development in a online plataform named Platzi.</p>
                 </article>
             </section>
             
             <!-- #2 My skills -->
-            <section class="home__content"></section>
+            <section class="home__content" id="my-skills">
+                <h1 class="home__title">My skills</h1>
+                <p class="home__text">This are the tecnologies i've learn to use. <br>
+                                      Click on them and you'll see a short description of what it is.</p>
+                <figure class="icon-container">
+                    <!-- html -->
+                    <figure class="icon-container__icons" onclick="showHtmlDescription()">
+                        <img src="./design/img/icon-html.png" alt="html icon" class="img">
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="html">
+                        <i class='bx bx-x close-description' onclick="closeHtmlDescription()"></i>
+                        <h1 class="home__title">HTML</h1>
+                        <p class="home__text">HTML Is an hypertext markup language, a formating system for displaying material retrieved over the Internet. <br>
+                                              HTML markup tags specify document elements such as headings, paragraphs and tables. An exaple is the heading of this paragraph.</p>
+                    </article>
+                    <!-- css -->
+                    <figure class="icon-container__icons" onclick="showCssDescription()">
+                        <img src="./design/img/icon-css.png" alt="css icon" class="img">
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="css">
+                        <i class='bx bx-x close-description' onclick="closeCssDescription()"></i>
+                        <h1 class="home__title">CSS</h1>
+                        
+                        <p class="home__text">CSS Is a stylesheet language used to describe the presentation of a document written in HTML or XML. <br>
+                                              CSS Describes how elements should be rendered on screen, like the color of this text.</p>
+                    </article>
+                    <!-- js -->
+                    <figure class="icon-container__icons" onclick="showJsDescription()">
+                        <img src="./design/img/icon-js.png" alt="javascript icon" class="img">                        
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="js">
+                        <i class='bx bx-x close-description' onclick="closeJsDescription()"></i>
+                        <h1 class="home__title">JavaScript</h1>
+                        <p class="home__text">JavaScript is a dynamic programming language that's used for web development, in web applications, for mobile apps, server features and some other things. <br><br>
+                                              It allows you to implement the logic features on web pages that cannot be done with only HTML and CSS. An example is when you click the 'x' to close this paragraph.</p>
+                    </article>
+                    <!-- sass -->
+                    <figure class="icon-container__icons" onclick="showSassDescription()">
+                        <img src="./design/img/sass-icon.png" alt="sass icon" class="img">
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="sass">
+                        <i class='bx bx-x close-description' onclick="closeSassDescription()"></i>
+                        <h1 class="home__title">Sass</h1>
+                        <p class="home__text">Sass is a basiclly CSS with superpowers, is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. <br><br>
+                                              So, i use this because it helps me to keep things organised and allows me to create style sheets faster.</p>
+                    </article>
+                    <!-- git -->
+                    <figure class="icon-container__icons" onclick="showGitDescription()">
+                        <img src="./design/img/git-logo.png" alt="git icon" class="img">
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="git">
+                        <i class='bx bx-x close-description' onclick="closeGitDescription()"></i>
+                        <h1 class="home__title">Git</h1>
+                        <p class="home__text">Git is a software for tracking changes in any set of files, is mostly used for coordinating work among programmers collaboratively developing source code during development. <br><br>
+                                              So, Git saves all changes that are made in a set of files, helping you to have a version control of the project.</p>
+                    </article>
+                    <!-- github -->
+                    <figure class="icon-container__icons" onclick="showGithubDescription()">
+                        <img src="./design/img/github-logo.png" alt="github icon" class="img">
+                    </figure>
+                    <article class="home__text-container icon-description--hide description" id="github">
+                        <i class='bx bx-x close-description' onclick="closeGithubDescription()"></i>
+                        <h1 class="home__title">GutHub</h1>
+                        <p class="home__text">GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. <br><br>
+                                              It's like Git but being conected with an online project working with other people. There's a control of who change something and when, very usefull for teamwork. <br><br>
+                                              It also allow you to share your projects, all your code can be public and other people can see it and help you.</p>
+                    </article>
+                    
+                    
+                    
+                    
+                    
+                    
+                </figure>
+            </section>
             
             <!-- #3 My story -->
             <section class="home__content"></section>
