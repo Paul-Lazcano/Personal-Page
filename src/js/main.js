@@ -20,6 +20,11 @@ const github = document.getElementById('github')
 /* html */
 const showHtmlDescription = () => {
     html.classList.remove('icon-description--hide')
+    closeCssDescription()
+    closeJsDescription()
+    closeSassDescription()
+    closeGitDescription()
+    closeGithubDescription()
 }
 const closeHtmlDescription = () => {
     html.classList.add('icon-description--hide')
@@ -27,6 +32,11 @@ const closeHtmlDescription = () => {
 /* css */
 const showCssDescription = () => {
     css.classList.remove('icon-description--hide')
+    closeHtmlDescription()
+    closeJsDescription()
+    closeSassDescription()
+    closeGitDescription()
+    closeGithubDescription()
 }
 const closeCssDescription = () => {
     css.classList.add('icon-description--hide')
@@ -34,6 +44,11 @@ const closeCssDescription = () => {
 /* js */
 const showJsDescription = () => {
     js.classList.remove('icon-description--hide')
+    closeHtmlDescription()
+    closeCssDescription()
+    closeSassDescription()
+    closeGitDescription()
+    closeGithubDescription()
 }
 const closeJsDescription = () => {
     js.classList.add('icon-description--hide')
@@ -41,6 +56,11 @@ const closeJsDescription = () => {
 /* Sass */
 const showSassDescription = () => {
     sass.classList.remove('icon-description--hide')
+    closeHtmlDescription()
+    closeCssDescription()
+    closeJsDescription()
+    closeGitDescription()
+    closeGithubDescription()
 }
 const closeSassDescription = () => {
     sass.classList.add('icon-description--hide')
@@ -48,6 +68,11 @@ const closeSassDescription = () => {
 /* Git */
 const showGitDescription = () => {
     git.classList.remove('icon-description--hide')
+    closeHtmlDescription()
+    closeCssDescription()
+    closeJsDescription()
+    closeSassDescription()
+    closeGithubDescription()
 }
 const closeGitDescription = () => {
     git.classList.add('icon-description--hide')
@@ -55,6 +80,11 @@ const closeGitDescription = () => {
 /* Github */
 const showGithubDescription = () => {
     github.classList.remove('icon-description--hide')
+    closeHtmlDescription()
+    closeCssDescription()
+    closeJsDescription()
+    closeSassDescription()
+    closeGitDescription()
 }
 const closeGithubDescription = () => {
     github.classList.add('icon-description--hide')
