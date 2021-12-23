@@ -1,12 +1,14 @@
 const menu = document.getElementById('menu')
-
+const openMenuButton = document.getElementById('open-menu')
 const openMenu = () => {
     menu.classList.add('show-menu')
     menu.classList.remove('hide-menu')
+    openMenuButton.classList.add('hide-menu')
 }
 const hideMenu = () => {
     menu.classList.add('hide-menu')
     menu.classList.remove('show-menu')
+    openMenuButton.classList.remove('hide-menu')
 }
 
 /* Show and hide tech */
@@ -16,7 +18,7 @@ const js = document.getElementById('js')
 const sass = document.getElementById('sass')
 const git = document.getElementById('git')
 const github = document.getElementById('github')
-
+const text = document.getElementsByClassName('home__text')
 /* html */
 const showHtmlDescription = () => {
     html.classList.remove('icon-description--hide')

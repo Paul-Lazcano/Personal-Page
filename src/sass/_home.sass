@@ -5,6 +5,7 @@
     display: grid
     padding: 0 $mb-1
     text-align: center
+    z-index: $z-tooltip
     .home__content
         display: flex
         flex-wrap: wrap
@@ -33,14 +34,55 @@
             .icon-container__icons
                 width: 40%
                 margin: $mb-2 0
+                z-index: $z-fixed
             .icon-description--hide
-                display: none
+                opacity: 0
+                font-size: 0px
+                height: 0
+                line-height: 0
             .description
                 border-block-end: 1px solid $text-color
                 padding-block-end: $mb-1
+                transition: 400ms
                 .close-description
                     font-size: $h1-font-size
                 
                 
         .home__text-container
             margin-block-start: $mb-1
+
+.home
+    @include media-up($breakpoint: lg)
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: auto auto 
+        height: 70%
+        grid-gap: $mb-2
+        .home__content
+            margin: 0
+            min-width: 95%
+            opacity: .70
+            transition: 400ms
+            border: 1px solid transparent
+            &:hover
+                opacity: 1
+                border-color: $text-color
+            .selected
+                opacity: 1
+                border-color: $text-color
+        #about
+            grid-column: 1 / 3
+            grid-row: 1 / 2
+        #my-skills
+            grid-column: 1 / 4
+            grid-row: 2 / 3
+            .icon-container__icons
+                width: 10%
+            .description
+                width: 100%
+                .home__text--hide
+                    line-height: 0
+                
+        #my-story
+            grid-column: 3 / 4
+            grid-row: 1 / 2

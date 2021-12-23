@@ -17,9 +17,11 @@ $breakpoints: (sm : 540px,md : 768px,lg : 1024px)
             flex-direction: row
             justify-content: end
             margin: 0 10vw
+            opacity: 1
             .nav__item
                 border-block-end: 1px solid transparent
-                &:active
+                transition: 400ms
+                &:hover
                     border-block-end: 1px solid #FCF9F8
             #close-menu
                 display: none
@@ -34,6 +36,7 @@ $breakpoints: (sm : 540px,md : 768px,lg : 1024px)
                 border: 4px solid #262626
                 padding: 2rem
             
+         
 .home
     @include media-up($breakpoint: md)
         .home__content
@@ -48,9 +51,15 @@ $breakpoints: (sm : 540px,md : 768px,lg : 1024px)
                 justify-content: space-evenly
                 .icon-container__icons
                     width: 35%
+    
+
+            
+    
 .footer
     @include media-up($breakpoint: md)
         margin: 0 10vw
-              
+    @include media-up($breakpoint: lg)
+        margin: 10rem auto 0 auto
+    
 
        
